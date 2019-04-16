@@ -170,7 +170,7 @@ def alphabet() -> dict:
 #print(alphabet())
 
 
-def simple_sort(list):
+def simple_sort(my_list):
     """
     Sort list of ints without using built-in methods.
     Examples:
@@ -180,15 +180,15 @@ def simple_sort(list):
 
     """
     n1 = -1
-    for i in list:
+    for i in my_list:
         n1 += 1
-    for i in list[:n1]:
+    for i in my_list[:n1]:
         n = n1
-        for j in list[:n1]:
-            if list[n - 1] > list[n]:
-                list[n - 1], list[n] = list[n], list[n - 1]
+        for j in my_list[:n1]:
+            if my_list[n - 1] > my_list[n]:
+                my_list[n - 1], my_list[n] = my_list[n], my_list[n - 1]
             n -= 1
-    return list
+    return my_list
 
 
 #print(simple_sort([4, 3, 10, 22, 15, 44, 55, 22, 2, 13, 111, 2]))
