@@ -33,7 +33,7 @@ def is_two_objects_is_the_same_objects(first: Any, second: Any) -> bool:
     """
     first = first + first
     second = second + second
-    return type(first) == type(second)
+    return first is second
 
 
 #print(is_two_objects_is_the_same_objects(1, 1.01))
