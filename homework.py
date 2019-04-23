@@ -136,9 +136,9 @@ def simple_sort(my_list):
     Returns:
     """
     n1 = -1
-    for i in my_list: #створюємо цикл для підрахунку довжини списку адже в умові маємо уникнути "built-in methods"
+    for i in my_list: #cycle to calculate the length of the list because in the condition we have to avoid "built-in methods"
         n1 += 1
-    for i in my_list[:n1]:  #цикли за алгоритмом сортування "бульбашками"
+    for i in my_list[:n1]:  #cycles by bubble sort algorithm
         n = n1
         for j in my_list[:n1]:
             if my_list[n - 1] > my_list[n]:
